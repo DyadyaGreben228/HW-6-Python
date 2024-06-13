@@ -1,0 +1,123 @@
+#1
+#def get_quantities(items):
+#
+#    updated_items = []
+#    for name, _, price in items:
+#        quantity = input(f"Введите количество для '{name}': ")
+#        updated_items.append((name, int(quantity), price))
+#    return updated_items
+#
+#def check(items):
+#    
+#    print("ООО Медовый Гексагон")
+#    total = 0
+#
+#    for item in items:
+#        name, quantity, price = item
+#        total_item = quantity * price
+#        total += total_item
+#        print(f"{name} ({quantity} шт.) - {total_item} тг.")
+#
+#    print(f"Итого: {total} тг.")
+#    print("Спасибо за покупку!")
+#
+#items = [
+#    ("Мёд липовый", 0, 1250),
+#    ("Мёд цветочный", 0, 1000),
+#    ("Мёд гречишный", 0, 1300),
+#    ("Донниковый мёд", 0, 1750),
+#    ("Малиновый мёд", 0, 2000)
+#]
+#
+#updated_items = get_quantities(items)
+#
+#check(updated_items)
+
+
+
+#2
+#def datas(name, age):
+#    data = {
+#        "Name": name,
+#        "Age": age,
+#    }
+#    
+#    for key, value in data.items():
+#        print(f"{key}: {value}")
+#
+#name = input("Введите имя: ")
+#age = int(input("Введите возраст: "))
+#
+#datas(name, age)
+#
+
+
+
+
+#3
+#def greet(name, greeting="Hello"):
+#    print(f"{greeting}, {name}!")
+#
+## Запрос ввода от пользователя
+#name = input("Введите имя: ")
+#greeting = input("Введите приветствие (оставьте пустым для использования по умолчанию): ")
+#
+## Вызов функции в зависимости от того, ввел ли пользователь кастомное приветствие
+#if greeting:
+#    greet(name, greeting)
+#else:
+#    greet(name)
+#
+
+
+
+
+
+
+
+#num = int(input("Сколько значений вы планируете ввести:"))
+#mas = []
+#for nums in range((num)):
+#    num = len(mas)
+#    nums = int(input("Введите значение:"))
+#    mas.append(nums)
+#    mass = sum(mas)
+#
+#print(*mas, sep=',')
+#print(mass)
+# 
+    
+
+
+
+#4
+#def sum_all(*args):
+#    return sum(args)
+#
+## Запрос ввода от пользователя
+#num = int(input("Сколько значений вы планируете ввести:"))
+#mas = []
+#for _ in range(num):
+#    value = int(input("Введите значение:"))
+#    mas.append(value)
+#
+## Вызов функции sum_all с использованием распаковки списка
+#mass = sum_all(*mas)
+#
+#print(*mas, sep=', ')
+#print(mass)
+#
+
+
+#5
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Запрос ввода от пользователя
+num = int(input("Введите число: "))
+result = factorial(num)
+
+print(result)
